@@ -2,12 +2,12 @@ const config = require('./src/config');
 
 module.exports = {
   siteMetadata: {
-    title: 'Brittany Chiang',
+    title: 'Nic Hartmann',
     description:
-      'Brittany Chiang is a software engineer who specializes in building (and occasionally designing) exceptional digital experiences.',
-    siteUrl: 'https://brittanychiang.com', // No trailing slash allowed!
+      'Nic Hartmann is a high-octane, down-to-earth, humble badass motion designer, focused on narrative-driven, clean-transitioning, eye-catching motion graphics',
+    siteUrl: 'https://sakhaltai.github.io/', // No trailing slash allowed!
     image: '/og.png', // Path to your image you placed in the 'static' folder
-    twitterUsername: '@bchiang7',
+    twitterUsername: '@sakhaltai',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -20,8 +20,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Brittany Chiang',
-        short_name: 'Brittany Chiang',
+        name: 'Nic Hartmann',
+        short_name: 'Nic Hartmann',
         start_url: '/',
         background_color: config.colors.darkNavy,
         theme_color: config.colors.navy,

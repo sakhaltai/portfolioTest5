@@ -12,9 +12,7 @@ import {
   IconLinkedin,
   IconLoader,
   IconLogo,
-  IconPlayStore,
   IconStar,
-  IconTwitter,
 } from '@components/icons';
 
 const Icon = ({ name }) => {
@@ -41,12 +39,8 @@ const Icon = ({ name }) => {
       return <IconLoader />;
     case 'Logo':
       return <IconLogo />;
-    case 'PlayStore':
-      return <IconPlayStore />;
     case 'Star':
       return <IconStar />;
-    case 'Twitter':
-      return <IconTwitter />;
     default:
       return <IconExternal />;
   }
