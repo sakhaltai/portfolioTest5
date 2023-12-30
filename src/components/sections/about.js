@@ -125,7 +125,16 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
+  const skills = [
+    'After Effects',
+    'Illustrator',
+    'Photoshop',
+    'Audition',
+    'Blender',
+    'Unreal',
+    'Figma',
+    'Premiere Pro',
+  ];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -135,33 +144,50 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Brittany and I enjoy creating things that live on the internet. My
-              interest in web development started back in 2012 when I decided to try editing custom
-              Tumblr themes — turns out hacking together a custom reblog button taught me a lot
-              about HTML &amp; CSS!
+              Hello! My name is Nic and I'm a linguistics enthusiast, devoted father, passionate
+              educator, and a 10-year veteran of the motion design industry. In 2010, I graduated
+              from <a href="https://www.wwu.edu/">Western Washington University</a>, with a degree
+              in <a href="https://en.wikipedia.org/wiki/Linguistics">Linguistics</a>, a bunch of
+              student debt, and no plan at all. After some rather unpleasant but character-building
+              years as a nail polish inventory manager, a vitamin shipper, and a valet, I took a
+              2-month intensive dive into the world of{' '}
+              <a href="https://www.adobe.com/products/aftereffects.html">After Effects</a>, and
+              managed to land myself an internship at a local boutique design shop,{' '}
+              <a href="https://www.crunchbase.com/organization/killer-infographics">
+                Killer Infographics
+              </a>
+              .
             </p>
-
             <p>
-              Fast-forward to today, and I’ve had the privilege of working at{' '}
-              <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
-              <a href="https://starry.com/">a start-up</a>,{' '}
-              <a href="https://www.apple.com/">a huge corporation</a>, and{' '}
-              <a href="https://scout.camd.northeastern.edu/">a student-led design studio</a>. My
-              main focus these days is building accessible, inclusive products and digital
-              experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
-              clients.
+              One year later I was a full-time motion designer, then a senior motion designer, then
+              the Director of Education, overseeing continuing education, holding workshops on After
+              Effects, hiring interns and mentoring students, and pioneering our first ever passion
+              project initiative. Every one of my interns was hired in the design industry after
+              completing their internships, and many of them were hired by our own company! The high
+              school students I mentored went on to study at prestigious art programs around the
+              world.
+              {/* I managed to weather the storm of multiple acquisitions and mergers from 2021 onward, until June of 2023 when the motion department was effectively shut down. */}
             </p>
-
             <p>
-              I also recently{' '}
-              <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
-                launched a course
-              </a>{' '}
-              that covers everything you need to build a web app with the Spotify API using Node
-              &amp; React.
+              Around the same time, I was hired by Shoreline Community College to teach an Intro to
+              After Effects class, as well as a Specializations class where students could pursue a
+              topic of their choice for an entire quarter. My After Effects students went from
+              complete novices to hireable motion designers in a matter of months, and I'm pleased
+              to say{' '}
+            </p>
+            <p>
+              I've worked in all phases of the motion design pipeline, including scripting,
+              storyboarding, asset creation, voiceover recording, sound editing, animation, video
+              editing, and project &amp; client management. So there ya have it. I've worked for a{' '}
+              <a href="https://www.crunchbase.com/organization/killer-infographics">
+                cute lil' boutique design shop
+              </a>
+              , a <a href="https://www.materialplus.io/">global media corp</a>, and a{' '}
+              <a href="https://www.shoreline.edu/">small-but-courageous community college</a>. My
+              priority these days is paying my mortgage and my daughter's daycare...
             </p>
 
-            <p>Here are a few technologies I’ve been working with recently:</p>
+            <p>Here are a few programs I work with:</p>
           </div>
 
           <ul className="skills-list">
@@ -173,7 +199,7 @@ const About = () => {
           <div className="wrapper">
             <StaticImage
               className="img"
-              src="../../images/me.jpg"
+              src="../../images/me.png"
               width={500}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}

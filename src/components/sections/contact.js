@@ -57,10 +57,11 @@ const Contact = () => {
     <StyledContactSection id="contact" ref={revealContainer}>
       <h2 className="numbered-heading overline">What’s Next?</h2>
 
-      <h2 className="title">Get In Touch</h2>
+      <h2 className="title">Hit Me Up</h2>
 
       <p>
-        I'm hella unemployed, but also hella skilled. You need Motion Graphics, After Effects instruction, Video Editing, Linguistics Nerd to geek out with? HMU!
+        I'm hella unemployed, but also hella skilled. You need Motion Graphics, After Effects
+        instruction, Video Editing, Linguistics stuff? HMU!
       </p>
 
       <a className="email-link" href={`mailto:${email}`}>
