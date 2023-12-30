@@ -2,8 +2,8 @@
 date: '1'
 title: 'Darklight Cybersecurity'
 cover: './coverFeaturedDarklight.png'
+github:
 external: 'https://youtu.be/wwHHtALJPlg'
-cta:
 tech:
   - After Effects
   - Motion Design
