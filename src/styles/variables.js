@@ -17,7 +17,7 @@ const variables = css`
     --pink: #f57dff;
     --blue: #57cbff;
 
-    --font-sans: 'Inter', sans-serif;
+    --font-sans: 'Calibre', sans-serif;
     --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
 
     --fz-xxs: 12px;
