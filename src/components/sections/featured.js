@@ -23,7 +23,7 @@ const StyledProject = styled.li`
   grid-template-columns: repeat(12, 1fr);
   align-items: center;
 
-  @media (max-width: 1080px) {
+  @media (max-width: 768px) {
     ${({ theme }) => theme.mixins.boxShadow};
   }
 
@@ -234,6 +234,12 @@ const StyledProject = styled.li`
       }
     }
 
+    .cta {
+      ${({ theme }) => theme.mixins.smallButton};
+      margin: 10px;
+    }
+  }
+
   .project-image {
     ${({ theme }) => theme.mixins.boxShadow};
     grid-column: 6 / -1;
@@ -310,7 +316,7 @@ const Featured = () => {
               title
               cover {
                 childImageSharp {
-                  gatsbyImageData(width: 720, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
+                  gatsbyImageData(width: 700, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
                 }
               }
               tech
@@ -347,7 +353,7 @@ const Featured = () => {
         {featuredProjects &&
           featuredProjects.map(({ node }, i) => {
             const { frontmatter, html } = node;
-            const { external, title, cover, tech } = frontmatter;
+            const { external, title, tech, cover } = frontmatter;
             const image = getImage(cover);
 
             return (

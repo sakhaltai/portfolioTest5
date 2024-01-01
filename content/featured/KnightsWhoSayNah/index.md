@@ -2,7 +2,6 @@
 date: '2'
 title: 'Knights Who Say Nah'
 cover: './coverFeaturedKWSN.png'
-github:
 external: 'https://youtu.be/dJLtmri-J2k'
 tech:
   - Unreal Engine 5
