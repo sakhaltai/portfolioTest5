@@ -7,5 +7,6 @@ range: 'Mar 2017 - Feb 2020'
 url: 'https://www.keltonglobal.com/perspectives/qa-with-amy-balliett-killer-infographics-ceo-and-co-founder/'
 ---
 
-- Collaborated with other student designers and engineers on pro-bono projects to create new brands, design systems, and websites for organizations in the community
-- Built and delivered technical solutions according to stakeholder business requirements
+- Director of Education | Jul 2016 – Jan 2021
+  - In addition to the responsibilities of a Senior Motion Designer, I oversaw onboarding, Killer’s intern program, After Effects tutelage, mentoring, professional development, and bolstering employee morale and expressiveness by facilitating passion projects.
+  - Mentored High School students and created learning paths for motion and design interns. All interns were placed in jobs within months of internship end.
