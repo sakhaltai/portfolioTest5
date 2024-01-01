@@ -61,18 +61,21 @@ const Hero = () => {
 
   const one = <h1>Hi, my name is</h1>;
   const two = <h2 className="big-heading">Nic Hartmann.</h2>;
-  const three = <h3 className="big-heading">I animate little vector things in After Effects.</h3>;
+  const three = <h3 className="big-heading">I animate cool lil vector things in After Effects.</h3>;
   const four = (
     <>
       <p>
         I'm a high-octane, down-to-earth, humble, badass motion designer, focused on
         narrative-driven, clean-transitioning, eye-catching motion graphics, with over 10 years of
-        experience in After Effects, Illustrator, and more. I also like to teach!
+        experience in After Effects, Illustrator, and more. I also{' '}
+        <a href="https://www.youtube.com/playlist?list=PLO0g83JdlVkFyl5QYNS0kna97EJpGPniv">
+          teach After Effects!
+        </a>
       </p>
     </>
   );
 
-  const five = (
+  /*   const five = (
     <a
       className="email-link"
       href="https://www.youtube.com/playlist?list=PLO0g83JdlVkEbnY8QVxTt-ykhucTxH6iq"
@@ -81,7 +84,9 @@ const Hero = () => {
       Check out my courses!
     </a>
   );
+ */
 
+  // const items = [one, two, three, four, five];
   const items = [one, two, three, four];
 
   return (
