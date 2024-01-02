@@ -2,11 +2,11 @@ import { css } from 'styled-components';
 
 const variables = css`
   :root {
-    --dark-navy: #3e006b;
+    --dark-navy: #210038;
     --navy: #7a04eb;
     --light-navy: #ff00a0;
     --lightest-navy: #fe75fe;
-    --navy-shadow: rgba(18, 0, 28, 0.7);
+    --navy-shadow: rgba(7, 0, 10, 1);
     --dark-slate: #495670;
     --slate: #ffffff;
     --light-slate: #f1f1f1;
@@ -16,6 +16,7 @@ const variables = css`
     --green-tint: rgba(100, 255, 218, 0.1);
     --pink: #f57dff;
     --blue: #ff9f8e;
+    --fart: #2e2e2e; // this is the new color for 'inlineLinkAlt', which is found in mixins.js, and featured.js
 
     --font-sans: 'Calibre', sans-serif;
     --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;

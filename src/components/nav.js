@@ -21,7 +21,7 @@ const StyledHeader = styled.header`
   filter: none !important;
   pointer-events: auto !important;
   user-select: auto !important;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(7px);
   transition: var(--transition);
 
   @media (max-width: 1080px) {

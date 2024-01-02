@@ -171,8 +171,12 @@ const StyledProject = styled.li`
       }
     }
 
-    a {
+    /*     a {
       ${({ theme }) => theme.mixins.inlineLink};
+    } */
+
+    a {
+      ${({ theme }) => theme.mixins.inlineLinkAlt};
     }
 
     strong {

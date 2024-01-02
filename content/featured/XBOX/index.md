@@ -1,6 +1,6 @@
 ---
-date: '4'
-title: 'XBOX Audience Segmentation - Soloist'
+date: '5'
+title: 'XBOX Segmentation - Soloist'
 cover: './coverFeaturedXBOXSoloist.png'
 external: 'https://youtu.be/8FNqpiRyzkk'
 tech:
