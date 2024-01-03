@@ -72,7 +72,10 @@ const Hero = () => {
         I'm a high-octane, down-to-earth, humble, badass motion designer, focused on
         narrative-driven, clean-transitioning, eye-catching motion graphics, with over 10 years of
         experience in After Effects, Illustrator, and more. I also{' '}
-        <a href="https://www.youtube.com/playlist?list=PLO0g83JdlVkFyl5QYNS0kna97EJpGPniv">
+        <a
+          href="https://www.youtube.com/playlist?list=PLO0g83JdlVkFyl5QYNS0kna97EJpGPniv"
+          target="_blank"
+          rel="noopener noreferrer">
           teach After Effects!
         </a>
       </p>
