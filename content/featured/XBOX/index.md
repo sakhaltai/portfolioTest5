@@ -1,6 +1,6 @@
 ---
 date: '5'
-title: 'XBOX Segmentation - Soloist'
+title: 'XBOX - Soloist'
 cover: './coverFeaturedXBOXSoloist.png'
 external: 'https://youtu.be/8FNqpiRyzkk'
 tech:
