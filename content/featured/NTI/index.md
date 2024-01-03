@@ -1,5 +1,5 @@
 ---
-date: '4'
+date: '2'
 title: 'Nuclear Threat Inivitiative'
 cover: './coverFeaturedNTI.png'
 external: 'https://youtu.be/tJLMear6KFI'
