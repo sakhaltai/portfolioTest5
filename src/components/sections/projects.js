@@ -88,6 +88,30 @@ const StyledProject = styled.li`
       }
     }
 
+    .unreal {
+      color: var(--green);
+      svg {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    .ae {
+      color: var(--green);
+      svg {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    .blender {
+      color: var(--green);
+      svg {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
     .project-links {
       display: flex;
       align-items: center;
@@ -123,7 +147,7 @@ const StyledProject = styled.li`
       position: static;
 
       &:before {
-        content: '';
+        content: "";
         display: block;
         position: absolute;
         z-index: 0;
@@ -181,6 +205,7 @@ const Projects = () => {
               title
               tech
               external
+              icon
             }
             html
           }
@@ -202,7 +227,9 @@ const Projects = () => {
 
     sr.reveal(revealTitle.current, srConfig());
     sr.reveal(revealArchiveLink.current, srConfig());
-    revealProjects.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 100)));
+    revealProjects.current.forEach((ref, i) =>
+      sr.reveal(ref, srConfig(i * 100)),
+    );
   }, []);
 
   const GRID_LIMIT = 6;
@@ -212,18 +239,43 @@ const Projects = () => {
 
   const projectInner = node => {
     const { frontmatter, html } = node;
-    const { github, external, title, tech } = frontmatter;
+    const { github, external, title, tech, icon } = frontmatter;
 
     return (
       <div className="project-inner">
         <header>
           <div className="project-top">
-            <div className="folder">
-              <Icon name="Folder" />
+            <div
+              className={
+                icon === 'unreal'
+                  ? 'unreal'
+                  : icon === 'ae'
+                    ? 'ae'
+                    : icon === 'blender'
+                      ? 'blender'
+                      : 'folder'
+              }
+            >
+              <Icon
+                name={
+                  icon === 'unreal'
+                    ? 'Unreal'
+                    : icon === 'ae'
+                      ? 'AE'
+                      : icon === 'blender'
+                        ? 'Blender'
+                        : 'Folder'
+                }
+              />
             </div>
             <div className="project-links">
               {github && (
-                <a href={github} aria-label="GitHub Link" target="_blank" rel="noreferrer">
+                <a
+                  href={github}
+                  aria-label="GitHub Link"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <Icon name="GitHub" />
                 </a>
               )}
@@ -233,7 +285,8 @@ const Projects = () => {
                   aria-label="External Link"
                   className="external"
                   target="_blank"
-                  rel="noreferrer">
+                  rel="noreferrer"
+                >
                   <Icon name="External" />
                 </a>
               )}
@@ -246,7 +299,10 @@ const Projects = () => {
             </a>
           </h3>
 
-          <div className="project-description" dangerouslySetInnerHTML={{ __html: html }} />
+          <div
+            className="project-description"
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
         </header>
 
         <footer>
@@ -266,7 +322,11 @@ const Projects = () => {
     <StyledProjectsSection>
       <h2 ref={revealTitle}>Nic, the Passionate Educator</h2>
 
-      <Link className="inline-link archive-link" to="/archive" ref={revealArchiveLink}>
+      <Link
+        className="inline-link archive-link"
+        to="/archive"
+        ref={revealArchiveLink}
+      >
         See me teach!
       </Link>
 
@@ -286,13 +346,17 @@ const Projects = () => {
                   key={i}
                   classNames="fadeup"
                   timeout={i >= GRID_LIMIT ? (i - GRID_LIMIT) * 300 : 300}
-                  exit={false}>
+                  exit={false}
+                >
                   <StyledProject
                     key={i}
                     ref={el => (revealProjects.current[i] = el)}
                     style={{
-                      transitionDelay: `${i >= GRID_LIMIT ? (i - GRID_LIMIT) * 100 : 0}ms`,
-                    }}>
+                      transitionDelay: `${
+                        i >= GRID_LIMIT ? (i - GRID_LIMIT) * 100 : 0
+                      }ms`,
+                    }}
+                  >
                     {projectInner(node)}
                   </StyledProject>
                 </CSSTransition>

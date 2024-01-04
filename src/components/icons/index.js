@@ -1,4 +1,6 @@
+export { default as IconAE } from './ae';
 export { default as IconAppStore } from './appstore';
+export { default as IconBlender } from './blender';
 export { default as IconBookmark } from './bookmark';
 export { default as IconCodepen } from './codepen';
 export { default as IconExternal } from './external';
@@ -13,3 +15,4 @@ export { default as IconLoader } from './loader';
 export { default as IconLogo } from './logo';
 export { default as IconStar } from './star';
 export { default as IconTwitter } from './twitter';
+export { default as IconUnreal } from './unreal';

@@ -18,8 +18,8 @@ const variables = css`
     --blue: #ff9f8e;
     --fart: #2e2e2e; // this is the new color for 'inlineLinkAlt', which is found in mixins.js, and featured.js
 
-    --font-sans: 'Calibre', sans-serif;
-    --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
+    --font-sans: "Calibre", sans-serif;
+    --font-mono: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
 
     --fz-xxs: 12px;
     --fz-xs: 13px;
@@ -44,7 +44,8 @@ const variables = css`
 
     --ham-before: top 0.1s ease-in 0.25s, opacity 0.1s ease-in;
     --ham-before-active: top 0.1s ease-out, opacity 0.1s ease-out 0.12s;
-    --ham-after: bottom 0.1s ease-in 0.25s, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    --ham-after: bottom 0.1s ease-in 0.25s,
+      transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
     --ham-after-active: bottom 0.1s ease-out,
       transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
   }
@@ -52,17 +53,18 @@ const variables = css`
 
 export default variables;
 
-/*     --dark-navy: #020c1b;
-    --navy: #0a192f;
-    --light-navy: #112240;
-    --lightest-navy: #233554;
+// old color values for reference
+/*     --dark-navy: #0 2 0 c 1 b;
+    --navy: # 0 a 1 9 2 f;
+    --light-navy: #1 1 2 2 4 0;
+    --lightest-navy: #2 3 3 5 5 4;
     --navy-shadow: rgba(2, 12, 27, 0.7);
-    --dark-slate: #495670;
-    --slate: #8892b0;
-    --light-slate: #a8b2d1;
-    --lightest-slate: #ccd6f6;
-    --white: #e6f1ff;
-    --green: #64ffda;
+    --dark-slate: #4 9 5 6 7 0;
+    --slate: #8 8 9 2 b 0;
+    --light-slate: #a 8 b 2 d 1;
+    --lightest-slate: #c c d 6 f 6;
+    --white: #e 6 f 1 f f;
+    --green: #6 4 f f d a;
     --green-tint: rgba(100, 255, 218, 0.1);
-    --pink: #f57dff;
-    --blue: #57cbff; */
+    --pink: #f 5 7 d f f;
+    --blue: #5 7 c b f f; */
