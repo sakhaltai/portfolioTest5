@@ -3,6 +3,8 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
 import { navDelay, loaderDelay } from '@utils';
 import { usePrefersReducedMotion } from '@hooks';
+import { graphql, useStaticQuery } from 'gatsby';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 const StyledHeroSection = styled.section`
   ${({ theme }) => theme.mixins.flexCenter};
@@ -46,6 +48,43 @@ const StyledHeroSection = styled.section`
   }
 `;
 
+const StyledThumbnail = styled.div`
+  position: relative;
+  width: 100%; // Adjust as needed
+  max-width: 700px; // Adjust as needed
+  margin-top: 50px;
+
+  .thumbnail-link {
+    display: inline-block;
+    width: 100%;
+    max-width: 700px;
+    border-radius: var(--border-radius);
+  }
+
+  .thumbnail-image {
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 30px -15px var(--navy-shadow);
+    transition: var(--transition);
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 20px 30px -15px var(--navy-shadow);
+    }
+  }
+
+  .overlay-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-size: var(--fz-lg);
+    font-weight: 600;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+  }
+`;
+
 const Hero = () => {
   const [isMounted, setIsMounted] = useState(false);
   const prefersReducedMotion = usePrefersReducedMotion();
@@ -82,19 +121,24 @@ const Hero = () => {
     </>
   );
 
-  /*   const five = (
-    <a
-      className="email-link"
-      href="https://www.youtube.com/playlist?list=PLO0g83JdlVkEbnY8QVxTt-ykhucTxH6iq"
-      target="_blank"
-      rel="noreferrer">
-      Check out my courses!
-    </a>
-  );
- */
+  const imageData = useStaticQuery(graphql`
+    query {
+      thumbnailImage: file(relativePath: { eq: "coverFeaturedDemoReel2024.png" }) {
+        childImageSharp {
+          gatsbyImageData(
+            width: 700
+            layout: CONSTRAINED
+            placeholder: BLURRED
+            formats: [AUTO, WEBP, AVIF]
+          )
+        }
+      }
+    }
+  `);
 
-  // const items = [one, two, three, four, five];
-  const items = [one, two, three, four];
+  const image = getImage(imageData.thumbnailImage.childImageSharp.gatsbyImageData);
+
+  const items = [one, two, three, four]; // if wanted, include 'five' at the end of this list to bring back dat button :D
 
   return (
     <StyledHeroSection>
@@ -114,6 +158,17 @@ const Hero = () => {
             ))}
         </TransitionGroup>
       )}
+      <StyledThumbnail>
+        <a
+          href="https://youtu.be/_e67KG1zSmA"
+          className="thumbnail-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Watch Demo Reel 2024">
+          <GatsbyImage image={image} alt="Demo Reel 2024" className="thumbnail-image" />
+          <div className="overlay-text">Demo Reel 2024</div>
+        </a>
+      </StyledThumbnail>
     </StyledHeroSection>
   );
 };
